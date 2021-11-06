@@ -1,0 +1,28 @@
+.navDiv {
+  margin: 0 auto;
+  width: 95vw;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 4rem;
+  grid-template-areas: "logo navLinks";
+
+  align-items: center;
+}
+
+.logo {
+  grid-area: logo;
+}
+
+.navLinks {
+  grid-area: navLinks;
+
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-self: end;
+  justify-items: center;
+  column-gap: 2rem;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
